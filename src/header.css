@@ -1,0 +1,175 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   background-image: linear-gradient(to right ,rgba(32, 240, 32, 0.555),rgba(255, 255, 0, 0.795));
+    
+}
+header h1{
+  color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 6vh;
+font-family: 'Roboto Mono', monospace;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(240, 17, 17, 0.534),rgba(183, 0, 255, 0.445));
+    padding: 1.2%;
+    width: 25vw;
+    height: 80%;
+    box-shadow:  0 1vh 2vh rgba(255, 255, 255, 0.685);
+}
+.search:hover{
+  box-shadow: none;
+  z-index: 10;
+}
+.search input{
+  padding: 1%;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: red;
+  font-size: 4vh;
+
+}
+.songs-box{
+    width: 20vw; 
+    margin-top: 2%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 1%;
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+.songs-item a{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-transform: capitalize;
+  font-size: 5vh;
+  color: black;
+  letter-spacing: 0.1vw;
+  text-decoration: none;
+}
+.songs-item a:hover{
+  color: red;
+  
+  text-shadow: 1px 8px 10px rgba(0, 0, 0, 0.37);
+
+}
+.container{
+  
+  height: 39vh;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-around;
+  margin: auto;
+  width: 98%;
+  margin-top: 3%;
+  border-bottom: 2px solid white;
+}
+.slide{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95%;
+  
+}
+.card{
+  border: 1px solid black;
+  width: 100%;
+  position: relative;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  
+}
+.next{
+  cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    border-radius: 0 3px 3px 0;
+     font-size: 8vh;
+     right:0;
+}
+.prev {
+  cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    border-radius: 0 3px 3px 0;
+     font-size: 8vh;
+     left: 0;
+  }
+.prev{
+left: 0;
+}
+.prev:hover{
+  background-color: rgba(255, 255, 255, 0.801);
+}
+ .next:hover {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+.cardimage{
+  width: 100%;
+  cursor: pointer;
+}
+.cardimage img{
+  height: 100%;
+  width: 100%;
+}
+.iframe{
+  margin:3% 0;
+  display: flex;
+  justify-content: center;
+  animation: fade 1s ease-in-out ;
+
+}
+
+  .cardimage img {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4vh;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    z-index: -10;
+  }
+  
+  
+  @keyframes fade {
+    
+    0%{
+      transform: translate(+100px);
+      opacity: 0;
+    
+    }
+    
+    100%{
+      transform: translate(0);
+      opacity: 1;
+    }
+  
+  }
+  
