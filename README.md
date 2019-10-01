@@ -1,3 +1,5 @@
+This was my first experience with react.It is simple music player.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
