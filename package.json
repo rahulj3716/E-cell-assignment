@@ -9,7 +9,7 @@
     "react-dom": "^16.8.2",
     "react-h5-audio-player": "^1.1.0",
     "react-responsive-carousel": "^3.1.47",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^7.5.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {
